@@ -11,11 +11,16 @@ def check_options(options):
     :return:
     """
 
+#   Poop
+
 def create_parser():
     """
     Create the Argument Parser for this script
     :return:  An `argparse.ArgumentParser` instance
     """
+    
+    
+    
     parser = argparse.ArgumentParser('pysines', description="")
     return parser
 
@@ -25,8 +30,14 @@ def parse_args(args):
     :param args: The list of arguments to parse, something like `sys.argv`
     :return: An `argparse.Namespace` object
     """
+
     parser = create_parser()
     return parser.parse_args(args)
+    
+#    - f C:/Donals/Folder/SubFolder
+#    --file C:/Donals/Folder/SubFolder
+#    - n 3
+#    --num 3
 
 def run(options):
     """
